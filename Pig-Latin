@@ -1,0 +1,14 @@
+pyg = 'ay'
+original = raw_input('Enter a word:')
+word = original.lower()
+first = word [0]
+my_string = word + pyg
+new_word = my_string[1:len(word)] + word[0] + pyg
+if len(original) > 0 and original.isalpha():
+    if first == 'a' or first == 'e' or first == 'i' or first == 'o' or first =='u':
+        print my_string
+    elif first != 'a' or first != 'e' or first != 'i' or first != 'o' or first != 'u':
+        print new_word
+    print 
+else:
+    print 'Only Alpha Characters'
